@@ -1,0 +1,94 @@
+/* * {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    font-size: 0;
+    text-decoration: none;
+} */
+#swiper {
+    /* width: 520px;
+    height: 28px; */
+    /* border: 2px solid blueviolet; */
+    position:relative;
+    overflow: hidden;
+    /* margin:100px auto; */
+}
+#swiper .imgBox {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    
+}
+
+#swiper ul li {
+    display: inline-block;
+}
+#swiper .imgBox li img{
+    width: 100%;  
+    height: 100%;
+    /* width: 520px;
+    height: 280px; */
+}
+
+/* 按钮 */
+#swiper  .btn {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    margin-top: -20px;
+}
+#swiper  .btn a {
+    /* 加上position: absolute;不仅为了分开两个a标签，
+    还会触发nfc，把a标签隐式转换成inline-block */
+    position: absolute;
+    /* display: inline-block; */
+    width: 40px;
+    height: 40px;
+    background-color: #000;
+    opacity: 0.5;
+    text-align: center;
+    line-height: 40px;
+
+}
+#swiper .btn a.prevBtn {
+    left: 0px;
+    border-radius:0% 50% 50% 0%;
+}
+#swiper .btn a.nextBtn {
+    right: 0px;
+    border-radius:50% 0 0 50%;
+}
+#swiper .btn span {
+    color: aliceblue;
+    font-size: 20px;
+}
+
+
+#swiper .order {
+    position: absolute;
+    width: 100%;
+    bottom: 10px;
+    text-align: center;
+    line-height: 8px; 
+     
+}
+#swiper .order ul {
+    display: inline-block;
+    border-radius: 8px;
+    padding: 3px;
+    background-color: rgba(130, 57, 199,0.6); 
+    
+    
+}
+#swiper .order ul li {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    margin: 5px;
+    background-color: rgb(199, 188, 188);
+    cursor: pointer;
+}
+#swiper .order ul li.active {
+    background-color: red;
+}
+

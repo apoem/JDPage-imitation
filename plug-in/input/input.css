@@ -1,0 +1,12 @@
+.serch .sercFrame {
+    display: none;
+    position: absolute;
+    z-index: 9999;
+}
+.serch .sercFrame li{
+    font-size: 14px;
+    width: 450px;
+    height: 25px;
+    background-color: #ffffff;
+    text-indent: 20px;
+}

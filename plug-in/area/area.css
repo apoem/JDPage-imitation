@@ -1,0 +1,37 @@
+#location  .nowArea{
+    width:60px;
+    text-align: center;
+    
+}
+#location .itemlist {
+    background-color: #fff;
+    border:1px solid #ddd;
+    padding: 10px;
+    position: absolute;  
+    z-index: 999;
+    display: none;
+}
+#location:hover .itemlist {
+    display: block;
+}
+#location .itemlist .item {
+    display: inline-block;
+    width: 70px;  
+    padding: 5px 0;
+    text-align: center;
+}
+#location .itemlist .item:hover a {
+    color: red;
+}
+#location .itemlist .item:hover {
+    background-color: #bbb;
+}
+#location .nowArea:hover {
+    background-color: #fff; 
+}
+#location .itemlist .item.nowActive {
+    background-color: red;
+}
+#location .itemlist .item.nowActive a {
+    color: #fff;
+}
